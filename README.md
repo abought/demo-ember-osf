@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/abought/demo-ember-osf.svg?branch=develop)](https://travis-ci.org/abought/demo-ember-osf)
 [![Coverage Status](https://coveralls.io/repos/github/abought/demo-ember-osf/badge.svg?branch=develop)](https://coveralls.io/github/abought/demo-ember-osf?branch=develop)
+[![Known Vulnerabilities](https://snyk.io/test/github/abought/demo-ember-osf/badge.svg)](https://snyk.io/test/github/abought/demo-ember-osf)
 
 # Demo-ember-osf
 
@@ -79,5 +80,4 @@ There are several packages that can enhance your large-scale applications, but a
 ## Future features to add to this app
 In the future, we will add:
 - Demonstrate nested route / paginated requests according to ember best practices
-- Improve a11y testing (currently runs during acceptance tests, but does not cause tests to fail; 
-  see [known pending issue](https://github.com/ember-a11y/ember-a11y-testing/issues/47))
+
