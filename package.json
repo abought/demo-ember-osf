@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/abought/demo-ember-osf",
   "devDependencies": {
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "broccoli-asset-rev": "^2.4.2",
     "coveralls": "^2.11.15",
     "ember-a11y-testing": "0.2.1",
@@ -62,7 +62,9 @@
   },
   "dependencies": {},
   "greenkeeper": {
-    "ignore": ["ember-cli"]
+    "ignore": [
+      "ember-cli"
+    ]
   },
   "jscsConfig": {
     "preset": "airbnb",
