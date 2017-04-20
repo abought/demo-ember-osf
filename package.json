@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "docs": "yuidoc",
-    "check-style": "./node_modules/jscs/bin/jscs .",
+    "check-style": "eslint .",
     "test": "yarn run check-style && ember test",
     "test:cover": "COVERAGE=true yarn test"
   },
@@ -24,22 +24,22 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/abought/demo-ember-osf",
   "devDependencies": {
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "broccoli-asset-rev": "^2.4.2",
     "coveralls": "^2.11.15",
     "ember-a11y-testing": "0.2.1",
     "ember-ajax": "^2.0.1",
-    "ember-bootstrap": "1.0.0-alpha.4",
+    "ember-bootstrap": "1.0.0-alpha.10",
     "ember-cli": "~2.8.0",
     "ember-cli-app-version": "^2.0.1",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-bootstrap-sassy": "0.5.5",
     "ember-cli-code-coverage": "^0.3.11",
     "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-eslint": "3.0.3",
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-jshint": "^2.0.1",
     "ember-cli-qunit": "^3.1.1",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sass": "6.1.1",
@@ -51,48 +51,18 @@
     "ember-data": "^2.8.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^0.6.3",
-    "ember-osf": "~0.3.0",
+    "ember-osf": "~0.4.0",
     "ember-page-title": "3.1.5",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^2.0.3",
-    "jscs": "^3.0.7",
+    "eslint": "^3.18.0",
     "loader.js": "^4.0.1",
     "phantomjs-prebuilt": "2.1.14",
     "yuidocjs": "^0.10.2"
   },
   "dependencies": {},
   "greenkeeper": {
-    "ignore": ["ember-cli"]
-  },
-  "jscsConfig": {
-    "preset": "airbnb",
-    "excludeFiles": [
-      "package.json",
-      "bower.json",
-      "testem.js",
-      "ember-cli-build.js",
-      "config/environment.js",
-      "bower_components",
-      "node_modules",
-      "coverage",
-      "dist",
-      "docs",
-      "tmp",
-      "vendor",
-      "app/locales",
-      "tests/unit",
-      "tests/integration",
-      "tests/helpers"
-    ],
-    "requireSpacesInsideObjectBrackets": false,
-    "requireSpacesInsideImportedObjectBraces": false,
-    "requireSpacesInAnonymousFunctionExpression": false,
-    "requireTrailingComma": false,
-    "disallowTrailingComma": false,
-    "requirePaddingNewLinesAfterBlocks": false,
-    "validateIndentation": 4,
-    "requirePaddingNewLinesBeforeLineComments": false,
-    "maximumLineLength": false,
-    "disallowSpaceBeforeComma": false
+    "ignore": [
+      "ember-cli"
+    ]
   }
 }
